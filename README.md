@@ -1,5 +1,12 @@
 # ARCTEN — Futuristic Fashion Website
-
+<p align="center">
+  <a href="https://arcten.netlify.app/">
+    <img src="https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20Website-success?style=for-the-badge" alt="Live Demo">
+  </a>
+  <a href="https://github.com/ATAMNA-YACINE/ARCTEN">
+    <img src="https://img.shields.io/badge/💻%20Source%20Code-GitHub-black?style=for-the-badge" alt="Source Code">
+  </a>
+</p>
 A modern and immersive luxury winter fashion e-commerce website inspired by futuristic editorial fashion design.
 
 ARCTEN combines cinematic visuals, bold typography, responsive layouts, and interactive shopping features to create a premium digital fashion experience.
