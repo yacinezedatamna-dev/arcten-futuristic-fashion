@@ -3,7 +3,7 @@
   <a href="https://arcten.netlify.app/">
     <img src="https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20Website-success?style=for-the-badge" alt="Live Demo">
   </a>
-  <a href="https://github.com/ATAMNA-YACINE/ARCTEN">
+  <a href="https://github.com/yacinezedatamna-dev/ARCTEN">
     <img src="https://img.shields.io/badge/💻%20Source%20Code-GitHub-black?style=for-the-badge" alt="Source Code">
   </a>
 </p>
