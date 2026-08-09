@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>...</head>
+<body>
+    <!-- Navbar -->
+    ...
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-detail-grid">
+                <div class="product-gallery">
+                    <div class="main-image" id="mainImage"><img src="" alt="Product" /></div>
+                    <div class="thumbnails" id="thumbnails"></div>
+                </div>
+                <div class="product-info">
+                    <h1 id="productName"></h1>
+                    <p class="product-category" id="productCategory"></p>
+                    <div class="product-price" id="productPrice"></div>
+                    <p class="product-description" id="productDescription"></p>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>COLOR</label>
+                            <div class="color-selector" id="detailColorSelector"></div>
+                        </div>
+                        <div class="option-group">
+                            <label>SIZE</label>
+                            <div class="size-selector" id="detailSizeSelector"></div>
+                        </div>
+                        <div class="option-group">
+                            <label>QUANTITY</label>
+                            <div class="qty-selector">
+                                <button class="qty-btn" id="detailQtyDec">−</button>
+                                <span class="qty-value" id="detailQtyValue">1</span>
+                                <button class="qty-btn" id="detailQtyInc">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary" id="detailAddCart">ADD TO CART</button>
+                        <button class="btn btn-outline">BUY NOW</button>
+                    </div>
+                    <div class="product-accordion">
+                        <div class="accordion-item"><button class="accordion-header">PRODUCT DETAILS</button><div class="accordion-body"><p>High-performance fabric, waterproof, breathable.</p></div></div>
+                        <div class="accordion-item"><button class="accordion-header">SHIPPING & RETURNS</button><div class="accordion-body"><p>Free shipping on orders over $500. 30-day return policy.</p></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    ...
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/product.js"></script>
+</body>
+</html>

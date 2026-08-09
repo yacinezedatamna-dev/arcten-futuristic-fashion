@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARCTEN — Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+    <!-- Navbar (same as index) -->
+    <header class="navbar" id="navbar">...</header>
+    <!-- (copy navbar code from index.html, but change active class to SHOP) -->
+
+    <main class="shop-page">
+        <div class="container">
+            <div class="shop-header">
+                <h1>ALL PRODUCTS</h1>
+                <div class="shop-controls">
+                    <div class="filter-group">
+                        <select id="filterCategory"><option value="all">CATEGORY</option><option value="JACKETS">JACKETS</option><option value="SUITS">SUITS</option><option value="SHELLS">SHELLS</option><option value="PARKAS">PARKAS</option></select>
+                        <select id="filterColor"><option value="all">COLOR</option><option value="ICE">ICE</option><option value="BLACK">BLACK</option><option value="WHITE">WHITE</option><option value="NAVY">NAVY</option></select>
+                        <select id="filterSize"><option value="all">SIZE</option><option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option></select>
+                        <select id="filterPrice"><option value="all">PRICE</option><option value="0-500">$0 – $500</option><option value="500-1000">$500 – $1000</option><option value="1000+">$1000+</option></select>
+                    </div>
+                    <div class="sort-group">
+                        <select id="sortSelect">
+                            <option value="featured">FEATURED</option>
+                            <option value="newest">NEWEST</option>
+                            <option value="low-high">PRICE LOW → HIGH</option>
+                            <option value="high-low">PRICE HIGH → LOW</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="product-grid" id="shopProductGrid"></div>
+        </div>
+    </main>
+
+    <!-- Footer (same as index) -->
+    <footer class="footer">...</footer>
+
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="js/products.js"></script>
+    <script src="js/shop.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

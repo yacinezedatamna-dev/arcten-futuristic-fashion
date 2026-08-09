@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>...</head>
+<body>
+    <!-- Navbar -->
+    ...
+    <section class="cart-page">
+        <div class="container">
+            <h1>YOUR CART</h1>
+            <div class="cart-content" id="cartContent">
+                <!-- Cart items rendered by JS -->
+                <div class="cart-empty" id="cartEmpty">Your cart is empty.</div>
+                <div class="cart-items" id="cartItems"></div>
+                <div class="cart-summary" id="cartSummary">
+                    <div class="cart-totals">
+                        <div class="cart-line"><span>SUBTOTAL</span><span id="subtotal">$0.00</span></div>
+                        <div class="cart-line"><span>SHIPPING</span><span id="shipping">$0.00</span></div>
+                        <div class="cart-line total"><span>TOTAL</span><span id="total">$0.00</span></div>
+                    </div>
+                    <div class="cart-actions">
+                        <a href="shop.html" class="btn btn-outline">CONTINUE SHOPPING</a>
+                        <button class="btn btn-primary" id="checkoutBtn">CHECKOUT</button>
+                        <button class="btn btn-outline" id="clearCartBtn">CLEAR CART</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    ...
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

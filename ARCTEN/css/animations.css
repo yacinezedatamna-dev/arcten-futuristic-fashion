@@ -1,0 +1,54 @@
+/* ===== Keyframes ===== */
+@keyframes pulseGlow {
+    0% { transform: scale(1); opacity: 0.6; }
+    100% { transform: scale(1.2); opacity: 1; }
+}
+
+@keyframes floatUp {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes scrollLine {
+    0% { transform: scaleY(0); opacity: 0; }
+    50% { transform: scaleY(1); opacity: 1; }
+    100% { transform: scaleY(0); opacity: 0; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Animation Classes ===== */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover zoom for product cards */
+.product-card-image img {
+    transition: transform 0.6s ease;
+}
+.product-card:hover .product-card-image img {
+    transform: scale(1.08);
+}
+
+/* Button hover effects */
+.btn {
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Page transition (fade) */
+.page-transition {
+    animation: fadeInUp 0.6s ease forwards;
+}

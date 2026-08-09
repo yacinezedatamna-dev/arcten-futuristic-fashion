@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARCTEN — Built for Extreme</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="navbar-inner container">
+            <a href="index.html" class="logo">ARCTEN</a>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html" class="active">HOME</a>
+                <a href="shop.html">SHOP</a>
+                <a href="collection.html">COLLECTION</a>
+                <a href="about.html">ABOUT</a>
+            </nav>
+            <div class="nav-icons">
+                <button class="nav-icon-btn" id="searchToggle" aria-label="Search"><i class="fas fa-search"></i></button>
+                <a href="account.html" class="nav-icon-btn" aria-label="Account"><i class="fas fa-user"></i></a>
+                <a href="cart.html" class="nav-icon-btn cart-btn" aria-label="Cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-overlay-inner">
+                <button class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search for products..." id="searchInput" />
+                </div>
+                <div class="search-suggestions">
+                    <span>Arctic Puffer</span><span>Glacier Suit</span><span>Storm Shell</span><span>Polar Jacket</span>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-inner">
+                <div class="mobile-menu-header">
+                    <span class="logo">ARCTEN</span>
+                    <button class="mobile-close" id="mobileClose"><i class="fas fa-times"></i></button>
+                </div>
+                <nav class="mobile-nav">
+                    <a href="index.html" class="active">HOME</a>
+                    <a href="shop.html">SHOP</a>
+                    <a href="collection.html">COLLECTION</a>
+                    <a href="about.html">ABOUT</a>
+                    <a href="contact.html">CONTACT</a>
+                </nav>
+                <div class="mobile-footer">
+                    <p>BUILT FOR EXTREME.</p>
+                    <p>DESIGNED FOR EVERYWHERE.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-grid container">
+            <div class="hero-content">
+                <div class="hero-label">WINTER 2026</div>
+                <h1 class="hero-title">COLLECTION<br /><span class="hero-title-highlight">ARCTIC 01</span></h1>
+                <p class="hero-desc">ENGINEERED FOR EXTREME.<br />DESIGNED FOR EVERYWHERE.</p>
+                <div class="hero-price">FROM $899</div>
+                <div class="hero-buttons">
+                    <a href="collection.html" class="btn btn-primary">SHOP COLLECTION</a>
+                    <a href="about.html" class="btn btn-outline">EXPLORE</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-placeholder">
+                        <div class="hero-image-glow"></div>
+                        <div class="hero-model-figure">
+                            <span class="model-label">ARCTIC 01</span>
+                            <div class="model-silhouette"><i class="fas fa-user"></i><span>EXTREME</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-float-card card-1">
+                    <div class="float-card-image"></div>
+                    <div class="float-card-info"><span class="float-card-name">ARCTIC PUFFER</span><span class="float-card-price">$899</span></div>
+                </div>
+                <div class="hero-float-card card-2">
+                    <div class="float-card-image"></div>
+                    <div class="float-card-info"><span class="float-card-name">GLACIER SUIT</span><span class="float-card-price">$1,299</span></div>
+                </div>
+                <div class="hero-float-card card-3">
+                    <div class="float-card-image"></div>
+                    <div class="float-card-info"><span class="float-card-name">STORM SHELL</span><span class="float-card-price">$749</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator"><span>SCROLL</span><div class="scroll-line"></div></div>
+    </section>
+
+    <!-- New Collection -->
+    <section class="collection-section" id="collection">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">NEW COLLECTION</div>
+                <h2 class="section-title">WINTER <span>/</span> 2026</h2>
+                <p class="section-subtitle">Discover the latest arrivals engineered for the extreme.</p>
+            </div>
+            <div class="product-grid" id="productGrid"></div>
+            <div class="section-footer"><a href="shop.html" class="btn btn-primary">VIEW ALL PRODUCTS</a></div>
+        </div>
+    </section>
+
+    <!-- Editorial -->
+    <section class="editorial" id="editorial">
+        <div class="editorial-bg" id="editorialBg"><div class="editorial-overlay"></div></div>
+        <div class="editorial-content container">
+            <div class="editorial-text">
+                <h2>BUILT FOR COLD<br /><span>MADE FOR HEIGHT</span><br />FORGED TO LAST</h2>
+                <p>Every stitch, every seam, every layer — engineered to withstand the harshest conditions on earth. ARCTEN is the intersection of extreme performance and futuristic design.</p>
+                <a href="collection.html" class="btn btn-primary btn-light">DISCOVER THE COLLECTION</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Product -->
+    <section class="featured" id="featured">
+        <div class="container">
+            <div class="featured-grid">
+                <div class="featured-image">
+                    <div class="featured-image-placeholder">
+                        <div class="featured-image-glow"></div>
+                        <div class="featured-model"><i class="fas fa-user"></i><span>ARCTIC 01</span></div>
+                    </div>
+                    <div class="featured-badge">BEST SELLER</div>
+                </div>
+                <div class="featured-info">
+                    <div class="featured-label">FEATURED</div>
+                    <h3 class="featured-name">ARCTIC 01</h3>
+                    <p class="featured-desc">Extreme Weather Puffer</p>
+                    <div class="featured-price">$899.99</div>
+                    <div class="featured-option">
+                        <span class="option-label">COLOR</span>
+                        <div class="color-selector" id="colorSelector">
+                            <button class="color-btn active" data-color="white" style="background:#f5f5f5;"></button>
+                            <button class="color-btn" data-color="ice" style="background:#d4e8f0;"></button>
+                            <button class="color-btn" data-color="black" style="background:#1a1a1a;"></button>
+                        </div>
+                    </div>
+                    <div class="featured-option">
+                        <span class="option-label">SIZE</span>
+                        <div class="size-selector" id="sizeSelector">
+                            <button class="size-btn">XS</button><button class="size-btn">S</button><button class="size-btn active">M</button><button class="size-btn">L</button><button class="size-btn">XL</button>
+                        </div>
+                    </div>
+                    <div class="featured-option">
+                        <span class="option-label">QUANTITY</span>
+                        <div class="qty-selector">
+                            <button class="qty-btn" id="qtyDec">−</button>
+                            <span class="qty-value" id="qtyValue">1</span>
+                            <button class="qty-btn" id="qtyInc">+</button>
+                        </div>
+                    </div>
+                    <div class="featured-actions">
+                        <button class="btn btn-primary btn-lg" id="featuredAddCart">ADD TO CART</button>
+                        <button class="btn btn-outline btn-lg">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo">ARCTEN</span>
+                    <p>Built for extreme. Designed for everywhere.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links"><h4>SHOP</h4><a href="shop.html">All Products</a><a href="collection.html">Collections</a><a href="#">New Arrivals</a><a href="#">Best Sellers</a></div>
+                <div class="footer-links"><h4>COMPANY</h4><a href="about.html">About</a><a href="contact.html">Contact</a><a href="#">Careers</a><a href="#">Sustainability</a></div>
+                <div class="footer-links"><h4>SUPPORT</h4><a href="#">Help Center</a><a href="#">Returns</a><a href="#">Shipping</a><a href="#">Privacy Policy</a></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 ARCTEN. All rights reserved.</p><p>Built for the extreme.</p></div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
